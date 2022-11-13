@@ -12,7 +12,8 @@
     "@vercel/og": "0.0.14",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "satori": "^0.0.44"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
