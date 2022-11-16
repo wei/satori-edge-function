@@ -1,4 +1,7 @@
-import satori from 'satori'
+import satori, { init as initSatori } from 'satori/wasm'
+import initYoga from 'yoga-wasm-web'
+// @ts-ignore
+import yoga_wasm from '../../yoga.wasm?module'
 
 export const config = {
   runtime: 'experimental-edge',
@@ -9,6 +12,9 @@ const font = fetch(new URL('../../assets/TYPEWR__.TTF', import.meta.url)).then(
 )
 
 export default async function handler() {
+  const yoga = await initYoga(yoga_wasm)
+  initSatori(yoga)
+
   const fontData = await font
 
   const svg = await satori(

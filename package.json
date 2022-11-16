@@ -13,7 +13,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "satori": "^0.0.44"
+    "satori": "^0.0.44",
+    "yoga-wasm-web": "0.1.2"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
